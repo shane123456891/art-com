@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Paintings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    header {
+        background-color: #000000;
+        color: #FFFFFF;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        background: url('lavender.jpg') no-repeat center center/cover;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: lavender;
+        text-decoration: none;
+        font-size: 1.1rem;
+        transition: color 0.3s, transform 0.3s;
+    }
+
+    nav ul li a:hover {
+        color: #FFFFFF;
+        transform: scale(1.1); /* Scale on hover */
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        animation: slideUp 1s ease-out;
+    }
+
+    .senator-card {
+        border: 1px solid #003366;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+        transition: box-shadow 0.3s, transform 0.3s;
+        background-color: #f8f8f8;
+        transform: translateY(10px);
+        opacity: 0;
+        animation: fadeInUp 1s forwards;
+    }
+
+    .senator-card:hover {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        transform: translateY(-5px);
+    }
+
+    .senator-card h2 {
+        color: #003366;
+        margin-bottom: 10px;
+    }
+
+    .senator-card h3 {
+        color: #002244;
+        margin-bottom: 5px;
+    }
+
+    .senator-card p {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        background-color: #000000;
+        color: #fff;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 40px;
+    }
+
+    /* Fade-in animation for the whole page */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    /* Slide-up animation for container */
+    @keyframes slideUp {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Fade-in and slide-up animation for each senator card */
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+<body>
+    <header>
+        <h1>Welcome to the Famous Paintings Gallery</h1>
+    </header>
+
+    <hr>
+<nav>
+<table cellspacing="10" cellpadding="10">
+<tr>
+<td><a href="Home.html">Home</a></td>
+<td><a href="About.html">About</a></td>
+<td><a href="Quotes.html">Quotes</a></td>
+<td><a href="Contacts.html">Contacts</a></td>
+</tr>
+</nav>
+</table>
+<hr>
+
+<a href = "Monalisa.html">
+<div class="container">
+    <section id="senator1" class="senator-card">
+      <h2>MONA LISA</h2>
+    </section>
+</a>
+
+ <a href = "Starrynight.html">
+<section id="senator1" class="senator-card">
+      <h2>STARRYNIGHT</h2>
+    </section>
+</a>
+
+<a href = "Girl.html">
+<section id="senator1" class="senator-card">
+      <h2>GIRL WITH A PEARL EARRING</h2>
+    </section>
+</a>
+
+<a href = "Scream.html">
+<section id="senator1" class="senator-card">
+      <h2>THE SCREAM</h2>
+    </section>
+</a>
+
+<a href = "last.html">
+<section id="senator1" class="senator-card">
+      <h2>THE LAST SUPPER</h2>
+    </section>
+</a>
+
+<a href = "persistence.html">
+<section id="senator1" class="senator-card">
+      <h2>THE PERSISTENCE OF MEMORY</h2>
+    </section>
+</a>
+
+<a href = "nightwatch.html">
+<section id="senator1" class="senator-card">
+      <h2>THE NIGHT WATCH</h2>
+    </section>
+</a>
+
+
+<hr>
+
+    <footer>
+        <p>Copyright &copy; DCMMMNHS_Student_Web_Developer.paintings 2024-2025</p>
+    </footer>
+</body>
+</html>
